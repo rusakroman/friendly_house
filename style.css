@@ -1,0 +1,292 @@
+@import "normalize.css";
+
+@font-face{ 
+  font-family: "Helvetica Neue Cyr-Light";
+  src: local("Helvetica Neue Cyr"), local("Helvetica Neue Cyr-Light"),
+  url("/font/HelveticaNeueCyr-Light.woff2") format("woff2"),
+  url("/font/HelveticaNeueCyr-Light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+} 
+
+@font-face{ 
+  font-family: "Comfortaa-Regular";
+  src: local("Comfortaa"), local("Comfortaa-Regular"),
+  url("/font/Comfortaa-Regular.woff2") format("woff2"),
+  url("/font/Comfortaa-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face{ 
+  font-family: "Helvetica Neue Cyr-Roman";
+  src: local("Helvetica Neue Cyr-Roman"), local("Helvetica-Neue-Cyr-Roman"),
+  url("/font/HelveticaNeueCyr-Roman.woff2") format("woff2"),
+  url("/font/HelveticaNeueCyr-Roman.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+} 
+
+@font-face{ 
+  font-family: "Helvetica Neue Cyr-Medium";
+  src: local("Helvetica Neue Cyr-Medium"), local("Helvetica-Neue-Cyr-Medium"),
+  url("/font/HelveticaNeueCyr-Medium.woff2") format("woff2"),
+  url("/font/HelveticaNeueCyr-Medium.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+} 
+
+
+
+html{
+    box-sizing:border-box;
+    position: relative;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+button{
+    cursor:pointer;
+    border:none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, p, figure, figcaption, ul, ol,blockquote{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body{
+  font-family: 'Helvetica Neue Cyr-light', serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #282626;
+}
+
+.container-about{
+  margin-left: 131px;
+  max-width: 450px;
+}
+
+.container-help{
+  margin-left: 131px;
+  max-width: 1000px;
+  
+}
+
+.about__title{
+  font-family: "Comfortaa-Regular", serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 60px;
+  font-weight: 400;
+  margin-bottom: 33px;
+}
+
+.about__element{
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 448px;
+}
+
+.about{
+  padding-top: 100px;
+  margin-bottom: 215px;
+}
+
+.help__title{
+  font-family: "Comfortaa-Regular", serif;
+  font-size: 50px;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 400;
+  color: #ff8a00;
+  padding-left: 200px;
+}
+
+.help__item-element{
+  max-width: 384px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.help__item-element_width_570{
+  max-width: 570px;
+}
+
+.help__item-element_width_462{
+  max-width: 462px;
+}
+
+.help__list{
+  list-style-type: none;
+  position: relative;
+  counter-reset: section;
+}
+
+.help-list__element{
+  margin-right: 45px;
+  font-family: "Helvetica Neue Cyr-Medium", serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.help__item::before{
+  counter-increment: section;
+  content: counter(section);
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 400;
+  position: relative;
+  color: #ff8a00;
+  left:-50px;
+  top:45px;
+}
+
+.help__item-title{
+  font-family: "Helvetica Neue Cyr-Roman", serif;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.help__item-element-weight_bold{
+  font-family: "Helvetica Neue Cyr-Medium", serif;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 32px;
+}
+
+.help__item-title_mb36{
+  margin-bottom: 36px;
+}
+
+.help__item-title_mb80{
+  margin-bottom: 80px;
+}
+
+.help__item:not(:last-child) {
+    margin-bottom: 130px;
+}  
+
+.container-form{
+  min-width: 1000px;
+  margin: 0 auto;
+}
+
+.communication{
+  padding-top:50px;
+  padding-bottom:50px;
+  background-color: rgb(80, 139, 139);
+}
+
+.help{
+  padding-bottom: 50px;
+}
+
+.form{
+  padding: 50px 100px;
+  width: 780px;
+  margin: 0 auto;
+  min-height:562px;
+   background-color: #F2F0F1;
+
+}
+
+.form__title{
+  font-family: Comfortaa,sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  color: #FF8A00;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form__list{
+   display: inline-block;
+   margin-bottom: 60px;
+  
+}
+
+.form__item{
+  display: inline-block;
+}
+
+.form__item:no(:last-child){
+  margin-right: 45px;
+}  
+
+.form__element{
+  text-align: center;
+}
+
+.form__element_orange{
+  font-family: "Helvetica Neue Cyr-Medium", serif;
+  font-weight: 500;
+  color: #FF8A00;
+}
+
+.form__div{
+  margin-bottom: 60px;
+}
+
+.communication__div{
+  text-align: center;
+  height: 20px;
+}
+
+.connect_element{
+  margin-bottom: 20px;
+}
+
+.form__input{
+  width: 280px;
+  height: 40px;
+}
+
+.connect__label{
+  font-size: 12px;
+}
+
+.connect__div{
+  margin-bottom: 34px;
+}
+
+.connect__div-label{
+  display: inline-block;
+  position: right;
+}
+
+.bg-button{
+  background-image: url('/img/lapa.svg');
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 90px;
+  float:right;
+}
+
+.form__element_mb20{
+  margin-bottom: 20px;
+}
+
