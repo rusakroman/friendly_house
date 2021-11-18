@@ -279,7 +279,7 @@ body{
 }
 
 .bg-button{
-  background-image: url('/img/lapa.svg');
+  background-image: url('img/lapa.svg');
   background-repeat: no-repeat;
   width: 80px;
   height: 90px;
