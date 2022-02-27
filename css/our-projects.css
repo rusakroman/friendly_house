@@ -74,6 +74,9 @@
   grid-column: 3/4;
   grid-row: 2/5;
   margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .grid-foto-right-02 {
@@ -106,6 +109,7 @@
 
 .our-projects__link {
   display: flex;
+  align-items: center;
   gap: 15px;
 }
 
@@ -189,9 +193,13 @@
   font-size: 30px;
   line-height: 40px;
   color: #fff;
-  padding-left: 10px;
-  padding-top: 292px;
   max-width: 300px;
+  margin-bottom: 25px;
+}
+
+.wrapper-dog {
+  margin-bottom: 15px;
+  padding-left: 10px;
 }
 
 .our-projects__link_pos {
