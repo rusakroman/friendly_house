@@ -182,3 +182,18 @@
   line-height: 60px;
   margin-bottom: 30px;
 }
+
+.dog-text {
+  font-family: 'Helvetica Neue Cyr';
+  font-weight: 550;
+  font-size: 30px;
+  line-height: 40px;
+  color: #fff;
+  padding-left: 10px;
+  padding-top: 292px;
+  max-width: 300px;
+}
+
+.our-projects__link_pos {
+  padding-left: 218px;
+}
